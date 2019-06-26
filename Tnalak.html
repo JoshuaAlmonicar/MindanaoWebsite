@@ -1,0 +1,171 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Tinalak Festival</title>
+    <link rel="stylesheet" type="text/css" href="Styles/BodyStyleSheet.css">
+    <link rel="stylesheet" type="text/css" href="Styles/slideshow.css">
+    <link rel="stylesheet" type="text/css" href="Styles/TopNavBar.css">
+    <script type="text/javascript" src="scripts/webpageScripts.js"></script>
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=YOURKEY&callback=initMap">
+    </script>
+
+</head>
+<body>
+    <div id="header">
+        <div>
+            <img src="images/Logo.png" style="width:125px;height:125px" />
+        </div>
+    </div>
+
+    <ul>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="Spots.html">Explore</a></li>
+        <li><a href="About.html">About Us</a></li>
+    </ul>
+
+    <div class="bodyrow">
+
+        <div class="side"></div>
+
+        <div class="main">
+            <h2 style="text-align:left">Tnalak Festival</h2>
+
+            <p>
+                One of Mindanao's unique ethnic festivals holds a week long celebration at July in Koronadal, South Cotabato, the locals say that the festival was made to celebrate the weavers of the indigenous T'boli tribe, whom weave a special cloth called T'nalak made from abaca fibres and its patterns are derived from their dreams hence the town of Koronadal is known as the Land of the Dreamweaver's, the festival begins with a prayer session from multiple faiths and then hosts a myriad of activities throughout the week such as sports competitions, musical dance celebrations and parades featuring a number of  processions with a myriad of woven cloth with design and colours from all over the region.
+            </p>
+
+            <div class="container slideshowsize">
+                <div class="mySlides">
+                    <div class="numbertext">1 / 4</div>
+                    <img class="imgsize" src="images/Location Images/Tnalak Festival/dsc_0495.jpg" />
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">2 / 4</div>
+                    <img class="imgsize" src="images/Location Images/Tnalak Festival/tanalaked2-700x531.jpeg">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">3 / 4</div>
+                    <img class="imgsize" src="images/Location Images/Tnalak Festival/tnalak_festival_south_cotabato_louiepac-6681.jpg">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">4 / 4</div>
+                    <img class="imgsize" src="images/Location Images/Tnalak Festival/tnalaked-700x525.jpeg">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+
+                <div class="caption-container">
+                    <p id="caption" color="white"></p>
+                </div>
+
+                <div class="row">
+                    <div class="column">
+                        <img class="demo cursor" src="images/Location Images/Tnalak Festival/dsc_0495.jpg" style="width:100%" onclick="currentSlide(1)" alt="Moro Procession">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/Location Images/Tnalak Festival/tanalaked2-700x531.jpeg" style="width:100%" onclick="currentSlide(2)" alt="Agricultural Fair">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/Location Images/Tnalak Festival/tnalak_festival_south_cotabato_louiepac-6681.jpg" style="width:100%" onclick="currentSlide(3)" alt="T'boli Tribe Dance'">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/Location Images/Tnalak Festival/tnalaked-700x525.jpeg" style="width:100%" onclick="currentSlide(4)" alt="Weaving Display">
+                    </div>
+                </div>
+            </div>
+
+
+            <h3>How to get there</h3>
+            <p>
+                Domestic airlines have daily flights from Manila, Cebu or Davao to General Santos City. You can then take a bus bound to Koronadal City, South Cotabato which is an hour away from General Santos City.
+            </p>
+
+
+
+            <h3>What to expect</h3>
+            <p>
+                Be sure to check out the schedule of events published from the South Cotabato officials, it is recommended that you leave behind backpacks along while attending the festival as security stationed throughout the city during the festivities and will likely to search your bag to ensure the publics safety.
+            </p>
+
+
+            <!--<iframe width="420" height="315" src="https://www.youtube.com/embed?v=NUg-QN0KyMM"></iframe>-->
+
+            <h2 style="text-align:left">Map of Koranadal City</h2>
+            <div id="map" style="width:600px;height:300px;"></div>
+
+            <script>
+                function initMap() {
+                    // The location
+                    var loc = { lat: 8.4961, lng: 123.3034 };
+                    // The map, centered at location (Zoom based on how far/close the location is centered ie street level, country level)
+                    var map = new google.maps.Map(
+                        document.getElementById('map'), { zoom: 10, center: loc });
+                    // The marker, positioned at location
+                    var marker = new google.maps.Marker({ position: loc, map: map });
+                }
+            </script>
+
+            <br />
+            <h2 style="text-align:left">Calendar of Events</h2>
+            <div class="container slideshowsize">
+                <div class="mySlides">
+                    <div class="numbertext">1 / 4</div>
+                    <img class="imgsize" src="images/Location Images/Tnalak Festival/tnalak-1.jpg" />
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">2 / 4</div>
+                    <img class="imgsize" src="images/Location Images/Tnalak Festival/tnalak-3.jpg">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">3 / 4</div>
+                    <img class="imgsize" src="images/Location Images/Tnalak Festival/tnalak6.jpg">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">4 / 4</div>
+                    <img class="imgsize" src="images/Location Images/Tnalak Festival/tnalak7.jpg">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+
+                <div class="row">
+                    <div class="column">
+                        <img class="demo cursor" src="images/Location Images/Tnalak Festival/tnalak-1.jpg" style="width:100%" onclick="currentSlide(1)" alt="1">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/Location Images/Tnalak Festival/tnalak-3.jpg" style="width:100%" onclick="currentSlide(2)" alt="2">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/Location Images/Tnalak Festival/tnalak6.jpg" style="width:100%" onclick="currentSlide(3)" alt="3">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/Location Images/Tnalak Festival/tnalak7.jpg" style="width:100%" onclick="currentSlide(4)" alt="4">
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="side"></div>
+
+    </div>
+    <script>
+            showSlides(slideIndex);
+    </script>
+
+</body>
+</html>

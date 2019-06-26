@@ -1,0 +1,129 @@
+﻿/*HOME PAGE STYLES*/
+div.uno {
+    display: inline-block;
+    width: 700px;
+    height: 700px;
+    margin-top: 20px;
+    margin-bottom: 80px;
+    margin-right: 20px;
+    margin-left: 150px;
+    float: left;
+}
+
+div.dos {
+    display: inline-block;
+    width: 700px;
+    height: 700px;
+    margin-top: 20px;
+    margin-bottom: 80px;
+    margin-right: 150px;
+    margin-left: 20px;
+    float: right;
+}
+
+p.one {
+    font-size: 20px;
+    font-family: monaco, Consolas, "Lucida Console", monospace;
+    color: rgb(92, 139, 122);
+    text-align: center;
+    border: 1px solid black;
+    border-style: solid;
+    border-width: medium;
+    background-color: rgb(228, 241, 255);
+    margin-top: 80px;
+    margin-bottom: 80px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+p.two {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+p.head1 {
+    font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", "sans serif";
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+}
+
+/*ABOUT PAGE STYLES*/
+
+div.mid {
+    font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", "sans serif";
+    text-align: center;
+    color: rgb(14, 90, 124);
+}
+
+
+div.josh {
+    display: inline-block;
+    width: 700px;
+    height: 500px;
+    margin: 20px;
+    /*margin-top: 20px;
+    margin-bottom: 80px;
+    margin-right: 20px;
+    margin-left: 150px;
+    float: left;*/
+    border: 1px solid black;
+    border-style: solid;
+    border-width: medium;
+    background-color: rgb(12, 200, 183);
+    /**/
+}
+
+div.menard {
+    display: inline-block;
+    width: 700px;
+    height: 500px;
+    margin: 20px;
+    /*margin-top: 20px;
+    margin-bottom: 80px;
+    margin-right: 150px;
+    margin-left: 20px;
+    float: right;*/
+    border: 1px solid black;
+    border-style: solid;
+    border-width: medium;
+    background-color: rgb(12, 200, 183);
+}
+
+p.jos {
+    font-size: 20px;
+    font-family: monaco, Consolas, "Lucida Console", monospace;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    border: 1px solid black;
+    border-style: solid;
+    border-width: medium;
+    background-color: rgb(178, 177, 177);
+    margin-top: 80px;
+    margin-bottom: 80px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+p.men {
+    font-size: 20px;
+    font-family: monaco, Consolas, "Lucida Console", monospace;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    border: 1px solid black;
+    border-style: solid;
+    border-width: medium;
+    background-color: rgb(178, 177, 177);
+    margin-top: 80px;
+    margin-bottom: 80px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.pics {
+    display:block;
+    margin: auto;
+}

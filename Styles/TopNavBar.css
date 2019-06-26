@@ -1,0 +1,41 @@
+﻿
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(128, 128, 128);
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    position: sticky;
+    top: 0;
+    text-align:center;
+}
+
+li {
+    float: left;
+    border-right: 1px solid black;
+
+}
+
+    li:last-child {
+
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 24px 14px;
+        text-decoration: none;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+        li a:hover:not(.active) {
+            background-color: #86bab7;
+        }
+
+.active {
+    background-color: #21938c;
+}

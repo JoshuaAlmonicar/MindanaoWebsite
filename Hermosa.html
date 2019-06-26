@@ -1,0 +1,164 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Zamboanga Hermosa Festival</title>
+    <link rel="stylesheet" type="text/css" href="Styles/BodyStyleSheet.css">
+    <link rel="stylesheet" type="text/css" href="Styles/slideshow.css">
+    <link rel="stylesheet" type="text/css" href="Styles/TopNavBar.css">
+    <script type="text/javascript" src="scripts/webpageScripts.js"></script>
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=YOURKEY&callback=initMap">
+    </script>
+
+</head>
+<body>
+    <div id="header">
+        <div>
+            <img src="images/Logo.png" style="width:125px;height:125px" />
+        </div>
+    </div>
+
+    <ul>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="Spots.html">Explore</a></li>
+        <li><a href="About.html">About Us</a></li>
+    </ul>
+
+    <div class="bodyrow">
+        <div class="side"></div>
+        <div class="main">
+            <h2>Zamboanga Hermosa Festival</h2>
+            <p>
+                In Western Mindanao, Zamboanga City holds an annual festival at the beginning  October known as the "Fiesta Pillar" is celebrated in honour of the city's patroness whom had left behind a cultural legacy after 300 years of Spanish colonial rule and held as a unifying cultural and historical symbol. The month long festivities hosts a number of activities such as the  "Mascota de Zamboanga" a grand parade where they a showcase a procession of intricately woven dresses and costumes where the mascot featuring the city patroness leads the procession, and "Reagatta De Zamboanga" is the infamous sailing competition where dozens of "vintas" sailing boats with colourful sails compete to race.            
+            </p>
+            <div class="container slideshowsize">
+                <div class="mySlides">
+                    <div class="numbertext">1 / 4</div>
+                    <img class="imgsize" src="images/Location Images/Zamboanga Hermosa/Zamboanga Hermosa Festival 2018 Streetdance.jpg" />
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">2 / 4</div>
+                    <img class="imgsize" src="images/Location Images/Zamboanga Hermosa/hermosa-festival-14.jpg">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">3 / 4</div>
+                    <img class="imgsize" src="images/Location Images/Zamboanga Hermosa/20181008-PageOne-Regatta-de-Zamboanga.jpg">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">4 / 4</div>
+                    <img class="imgsize" src="images/Location Images/Zamboanga Hermosa/11.jpg">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+
+                <div class="row">
+                    <div class="column">
+                        <img class="demo cursor" src="images/Location Images/Zamboanga Hermosa/Zamboanga Hermosa Festival 2018 Streetdance.jpg" style="width:100%" onclick="currentSlide(1)" alt="2018 Festival Promotion Page">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/Location Images/Zamboanga Hermosa/hermosa-festival-14.jpg" style="width:100%" onclick="currentSlide(2)" alt="Patroness Mascot">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/Location Images/Zamboanga Hermosa/20181008-PageOne-Regatta-de-Zamboanga.jpg" style="width:100%" onclick="currentSlide(3)" alt="Vintas Sailing Competition">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/Location Images/Zamboanga Hermosa/11.jpg" style="width:100%" onclick="currentSlide(4)" alt="Hermosa Dancing Competition">
+                    </div>
+
+                </div>
+            </div>
+
+            <h3>How to get there</h3>
+            <p>
+                Domestic airlines fly daily to Zamboanga City from Manila and Cebu, we recommend booking accommodation if you intend to stay for the month long festivities.
+            </p>
+
+            <h3>What to expect</h3>
+            <p>
+                Make sure to check out the calendar of major activities prepared by the City Government of Zamboanga prior to the festival such as the one listed below
+            </p>
+
+            <h3>Map of Zamboanga City</h3>
+            <div id="map" style="width:600px;height:300px;"></div>
+
+            <script>
+                function initMap() {
+                    // The location
+                    var loc = { lat: 6.9214, lng: 122.0790 };
+                    // The map, centered at location (Zoom based on how far/close the location is centered ie street level, country level)
+                    var map = new google.maps.Map(
+                        document.getElementById('map'), { zoom: 10, center: loc });
+                    // The marker, positioned at location
+                    var marker = new google.maps.Marker({ position: loc, map: map });
+                }
+            </script>
+
+            <h3>Calendar of Activities</h3>
+            <img width="650" height="500" src="images/Location Images/Zamboanga Hermosa/Calendar-01.jpg" />
+            <img width="650" height="500" src="images/Location Images/Zamboanga Hermosa/Calendar-02.jpg" />
+            <img width="650" height="500" src="images/Location Images/Zamboanga Hermosa/Calendar-03.jpg" />
+            <img width="650" height="500" src="images/Location Images/Zamboanga Hermosa/Calendar-04.jpg" />
+
+            <!--<div class="container slideshowsize">
+                <div class="mySlides">
+                    <div class="numbertext">1 / 4</div>
+                    <img class="imgsize" src="images/Location Images/Zamboanga Hermosa/Zamboanga Hermosa Festival 2018 Streetdance.jpg" />
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">2 / 4</div>
+                    <img class="imgsize" src="images/Location Images/Zamboanga Hermosa/hermosa-festival-14.jpg">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">3 / 4</div>
+                    <img class="imgsize" src="images/Location Images/Zamboanga Hermosa/20181008-PageOne-Regatta-de-Zamboanga.jpg">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">4 / 4</div>
+                    <img class="imgsize" src="images/Location Images/Zamboanga Hermosa/11.jpg">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+
+                <div class="row">
+                    <div class="column">
+                        <img class="demo cursor" src="images/Location Images/Zamboanga Hermosa/Zamboanga Hermosa Festival 2018 Streetdance.jpg" style="width:100%" onclick="currentSlide(1)" alt="2018 Festival Promotion Page">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/Location Images/Zamboanga Hermosa/hermosa-festival-14.jpg" style="width:100%" onclick="currentSlide(2)" alt="Patroness Mascot">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/Location Images/Zamboanga Hermosa/20181008-PageOne-Regatta-de-Zamboanga.jpg" style="width:100%" onclick="currentSlide(3)" alt="Vintas Sailing Competition">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/Location Images/Zamboanga Hermosa/11.jpg" style="width:100%" onclick="currentSlide(4)" alt="Hermosa Dancing Competition">
+                    </div>
+
+                </div>
+            </div>-->
+
+
+        </div>
+        <div class="side"></div>
+    </div>
+    <script>
+                showSlides(slideIndex);
+    </script>
+</body>
+</html>

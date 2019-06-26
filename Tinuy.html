@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Tinuy Falls</title>
+    <link rel="stylesheet" type="text/css" href="Styles/BodyStyleSheet.css">
+    <link rel="stylesheet" type="text/css" href="Styles/slideshow.css">
+    <link rel="stylesheet" type="text/css" href="Styles/TopNavBar.css">
+    <script type="text/javascript" src="scripts/webpageScripts.js"></script>
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=YOURKEY&callback=initMap">
+    </script>
+
+</head>
+<body>
+    <div id="header">
+        <div>
+            <img src="images/Logo.png" style="width:125px;height:125px" />
+        </div>
+    </div>
+
+    <ul>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="Spots.html">Explore</a></li>
+        <li><a href="About.html">About Us</a></li>
+    </ul>
+
+    <div class="bodyrow">
+        <div class="side"></div>
+        <div class="main">
+            <h2>Tinuy-An Waterfalls</h2>
+            <p>
+                The Tinuy-an Falls is a waterfall in Bislig that cascades into multiple tiers,
+                Surrounded by a thick rain forest, there  are various islets around the waterfalls swimming grounds,  rafts for hire to cross the waterfall as well as  stony outcrops as shallow pathways it is one of the main attractions in the region of Surigao del Sur. <br />
+                The area is well developed to partake in various activities at the waterfall grounds, with pathways built around the waterfall grounds to let you access each waterfall tier.
+                The name of the falls "Tinuy-an" is derived from the Visayan dialect meaning an act to achieve a certain goals which relates to the local legend when tribes in the region, the Agusan enslaved the Magdiwata Mountain people. The esnalved tribe seeking to be free from their captivity, one day while rowing their Agusan masters on barotos canoes, deliberately steered the canoes into the falls plunging to their deaths and freeing Magdiwata tribe.
+            </p>
+            <div class="container slideshowsize">
+                <div class="mySlides">
+                    <div class="numbertext">1 / 4</div>
+                    <img class="imgsize" src="images/Location Images/Tinuy Falls/Tinuy-An_00.jpg" />
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">2 / 4</div>
+                    <img class="imgsize" src="images/Location Images/Tinuy Falls/hiddencascade.jpg">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">3 / 4</div>
+                    <img class="imgsize" src="images/Location Images/Tinuy Falls/Tinuy-An_05.jpg">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">4 / 4</div>
+                    <img class="imgsize" src="images/Location Images/Tinuy Falls/9714253755_138e32ebdf_o.jpg">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+
+                <div class="row">
+                    <div class="column">
+                        <img class="demo cursor" src="images/Location Images/Tinuy Falls/Tinuy-An_00.jpg" style="width:100%" onclick="currentSlide(1)" alt="Main Cascade">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/Location Images/Tinuy Falls/hiddencascade.jpg" style="width:100%" onclick="currentSlide(2)" alt="Hidden Cascade">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/Location Images/Tinuy Falls/Tinuy-An_05.jpg" style="width:100%" onclick="currentSlide(3)" alt="Multiple Cascades">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/Location Images/Tinuy Falls/9714253755_138e32ebdf_o.jpg" style="width:100%" onclick="currentSlide(4)" alt="Close-up Shot">
+                    </div>
+
+                </div>
+            </div>
+
+            <h3>How to get there</h3>
+            <p>
+                Domestic airlines have direct daily flights from Cebu and Manila going to Surigao City (Surigao del Norte), Butuan City (Agusan del Norte), and Davao City. <br />
+                Inter-island ferries such as Super-ferry and Sulpicio Lines serves the Manila-Butuan or Cebu-Butuan routes on regular schedules with Nasipit Port as transit point. Transportation via vans or jeepney is available at port to the city terminal in Bislig City. <br />
+                <br />
+                From Butuan City. Ride in a bus bound to Mangagoy, Bislig City <br />
+                From Surigao City. Ride in a bus/van bound to Butuan City- 3-hour travel. At Butuan City Bus Terminal, ride in a bus bound to Mangagoy, Bislig City. <br />
+                From Davao City.  Buses in Davao Ecoland Terminal directly bound to Mangagoy in Bislig City. Travel time is more or less 6 hours.<br />
+                From Mangagoy, Bislig City business center you can then head to habal-habal terminal in the market – where you can hire a habal-habal for P300-400 back and forth including waiting time. An 18 kilometre ride would take about 30-45 minutes.
+            </p>
+            <p>
+
+            </p>
+            <h3>What to expect</h3>
+            <p>
+                The waterfall grounds is a developed area for tourism, there are various facilities such as food and drink stalls and a visitor centre. They also charge fees upon entry.
+            </p>
+            <h3>Location</h3>
+            <div id="map" style="width:600px;height:300px;"></div>
+
+            <script>
+                function initMap() {
+                    // The location
+                    var loc = { lat: 8.1718, lng: 126.2282 };
+                    // The map, centered at location (Zoom based on how far/close the location is centered ie street level, country level)
+                    var map = new google.maps.Map(
+                        document.getElementById('map'), { zoom: 10, center: loc });
+                    // The marker, positioned at location
+                    var marker = new google.maps.Marker({ position: loc, map: map });
+                }
+            </script>
+
+        </div>
+        <div class="side"></div>
+    </div>
+    <script>
+                showSlides(slideIndex);
+    </script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+﻿* {
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #464646;
+}
+
+
+body {
+    background-image: url('../images/Background Images/background.png');
+    background-size: 100% 100%;
+    /*background-repeat: no-repeat;*/
+}
+
+#header {
+    border: 1px solid black;
+    background-image: url('../images/Background Images/NewHeaderBG.png');
+    background-repeat: no-repeat;
+    /*Centering the image banner*/
+    background-size: cover;
+    width: 100%;
+}
+
+/*ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(128, 128, 128);
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 0.1px solid #e6eef3;
+    position: sticky;
+    top: 0;
+}
+
+li {
+    float: left;
+    border-right: 1px solid black;
+}
+
+    li:last-child {
+        border-right: none;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 24px 14px;
+        text-decoration: none;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+        li a:hover {
+            background-color: #e6eef3;
+        }
+
+.active {
+    background-color: #21938c;
+}*/
+
+h1 {
+    text-align: center;
+    color: rgb(54, 124, 99);
+    font-family: monaco, Consolas, "Lucida Console", monospace;
+    font-size: 60px;
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+
+.images {
+    -ms-flex: 33.33%;
+    flex: 33.33%;
+    max-width: 33.33%;
+    padding: 0 4px;
+}
+
+
+    .images img {
+        margin-top: 8px;
+        vertical-align: middle;
+        width: 100%;
+    }
+
+/*this will make it adaptive to different screen sizes or when you zoom in/out*/
+@media screen and (max-width: 800px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/*this will make it adaptive to different screen sizes or when you zoom in/out*/
+@media screen and (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+.bodyrow {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+}
+
+.side {
+    -ms-flex: 15%; /* IE10 */
+    flex: 15%;
+    padding: 20px;
+}
+
+.main {
+    -ms-flex: 70%; /* IE10 */
+    flex: 70%;
+    padding: 20px;
+}
+
+.resize{
+    width:500px;
+    height: 500px;
+}
+

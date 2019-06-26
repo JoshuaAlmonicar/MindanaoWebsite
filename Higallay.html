@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Higalaay Festival</title>
+    <link rel="stylesheet" type="text/css" href="Styles/BodyStyleSheet.css">
+    <link rel="stylesheet" type="text/css" href="Styles/slideshow.css">
+    <link rel="stylesheet" type="text/css" href="Styles/TopNavBar.css">
+    <script type="text/javascript" src="scripts/webpageScripts.js"></script>
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=YOURKEY&callback=initMap">
+    </script>
+
+</head>
+<body>
+    <div id="header">
+        <div>
+            <img src="images/Logo.png" style="width:125px;height:125px" />
+        </div>
+    </div>
+
+    <ul>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="Spots.html">Explore</a></li>
+        <li><a href="About.html">About Us</a></li>
+    </ul>
+
+    <div class="bodyrow">
+        <div class="side"></div>
+        <div class="main">
+            <h2>Higalaay Festival in Cagayan de Oro</h2>
+            <p>
+                The Higalaay Festival known as the Friendship Festival is held in the month of August at Cagayan de Oro City known as the City of Golden Friendship, the festival commemorates the feast day of the city's patron saint, Saint Augustine of Hippo the festival spans throughout August with a myriad of activities at the festival such as the carnival parade, fireworks display, sporting events and religious processions. 
+            </p>
+            <div class="container slideshowsize">
+                <div class="mySlides">
+                    <div class="numbertext">1 / 4</div>
+                    <img class="imgsize" src="images/Location Images/Higallay Festival/27cdo1web.jpg" />
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">2 / 4</div>
+                    <img class="imgsize" src="images/Location Images/Higallay Festival/40224813_1746645865433554_3872279283565068288_o.jpg">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">3 / 4</div>
+                    <img class="imgsize" src="images/Location Images/Higallay Festival/Higalaay-Kagay-an-Festival-1024x680.jpg">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">4 / 4</div>
+                    <img class="imgsize" src="images/Location Images/Higallay Festival/flivial.jpg">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+
+                <div class="row">
+                    <div class="column">
+                        <img class="demo cursor" src="images/Location Images/Higallay Festival/27cdo1web.jpg" style="width:100%" onclick="currentSlide(1)" alt="Festival Parade">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/Location Images/Higallay Festival/40224813_1746645865433554_3872279283565068288_o.jpg" style="width:100%" onclick="currentSlide(2)" alt="Dance Competition">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/Location Images/Higallay Festival/Higalaay-Kagay-an-Festival-1024x680.jpg" style="width:100%" onclick="currentSlide(3)" alt="Parade Contestants">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/Location Images/Higallay Festival/flivial.jpg" style="width:100%" onclick="currentSlide(4)" alt="Fluvial Procession">
+                    </div>
+
+                </div>
+            </div>
+            <h3>How to get there</h3>
+            <p>
+                Domestic flights to  Laguindingan Airport, the main airport of Cagayan de Oro City are available from Manila, Cebu and Davao via Cebu Pacific and Philippine Airlines which have direct flights to Laguindingan from Manila and Cebu.            
+            </p>
+            <h3>Map of Cagayan de Oro</h3>
+            <div id="map" style="width:600px;height:300px;"></div>
+
+            <script>
+                function initMap() {
+                    // The location
+                    var loc = { lat: 8.4542, lng: 124.6319 };
+                    // The map, centered at location (Zoom based on how far/close the location is centered ie street level, country level)
+                    var map = new google.maps.Map(
+                        document.getElementById('map'), { zoom: 10, center: loc });
+                    // The marker, positioned at location
+                    var marker = new google.maps.Marker({ position: loc, map: map });
+                }
+            </script>
+
+            <h3>Watch</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/a3Frs7dxUj8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+            <h3>What to expect</h3>
+            <p>
+                Much like the other festivals such as Tnalak and Zamboanga Hermosa, there will be a calendar of events published by the city officials, make sure to inquire about the events prior to the festival so you may plan your journey.
+            </p>
+
+            <h3>Event Calendar</h3>
+            <img width="800" height="500" src="images/Location Images/Higallay Festival/Higalaay-2018-B.jpg" />
+
+        </div>
+        <div class="side"></div>
+    </div>
+    <script>
+                showSlides(slideIndex);
+    </script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Hinatuan Enchanted River</title>
+    <link rel="stylesheet" type="text/css" href="Styles/BodyStyleSheet.css">
+    <link rel="stylesheet" type="text/css" href="Styles/slideshow.css">
+    <link rel="stylesheet" type="text/css" href="Styles/TopNavBar.css">
+    <script type="text/javascript" src="scripts/webpageScripts.js"></script>
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=YOURKEY&callback=initMap">
+    </script>
+
+</head>
+<body>
+    <div id="header">
+        <div>
+            <img src="images/Logo.png" style="width:125px;height:125px" />
+        </div>
+    </div>
+
+    <ul>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="Spots.html">Explore</a></li>
+        <li><a href="About.html">About Us</a></li>
+    </ul>
+
+    <div class="bodyrow">
+        <div class="side"></div>
+        <div class="main">
+            <h2 style="text-align:left">Hinatuan Enchanted River</h2>
+            <p>
+                The Hinatuan Enchanted River is a saltwater river created by an underground cave system that filters the water free from dirt or silt which juts out into the stream and flows to the Pacific Ocean, the crystal clear waters of The Hinatuan River creates a beautiful and picturesque site in Mindanao being steeped with its lore and history with the local people of Hinatuan, it is said that the rivers caretakers rings a bell at every noon, signalling the swimmers to vacate the river. The caretaker will then sing the "Hymn of Hinatuan" and will then feed the schools of fish that appear during the hymn, during this feeding time no one is allowed to step into or disturb the river. After feeding time the caretaker leaves and the swimmers are permitted to enter the river.
+            </p>
+            <div class="container slideshowsize">
+                <div class="mySlides">
+                    <div class="numbertext">1 / 4</div>
+                    <img class="imgsize" src="images/Location Images/Hinatuan River/35171817502_a00985c4b8_b.jpg" />
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">2 / 4</div>
+                    <img class="imgsize" src="images/Location Images/Hinatuan River/dsc00557.jpg">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">3 / 4</div>
+                    <img class="imgsize" src="images/Location Images/Hinatuan River/enchanted-river-1024x768.jpg">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">4 / 4</div>
+                    <img class="imgsize" src="images/Location Images/Hinatuan River/G0572258-2.jpg">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+
+                <div class="caption-container">
+                    <p id="caption" color="white"></p>
+                </div>
+
+                <div class="row">
+                    <div class="column">
+                        <img class="demo cursor" src="images/Location Images/Hinatuan River/35171817502_a00985c4b8_b.jpg" style="width:100%" onclick="currentSlide(1)" alt="River Photograph One">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/Location Images/Hinatuan River/dsc00557.jpg" style="width:100%" onclick="currentSlide(2)" alt="River Photograph Two">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/Location Images/Hinatuan River/enchanted-river-1024x768.jpg" style="width:100%" onclick="currentSlide(3)" alt="River Photograph Three">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/Location Images/Hinatuan River/G0572258-2.jpg" style="width:100%" onclick="currentSlide(4)" alt="River Photograph Four">
+                    </div>
+                </div>
+            </div>
+
+            <h3>How to get there</h3>
+            <p>
+                The Hinatuan Enchanted River is located in the Barangay Talisay, Hinatuan Municipality, Surigao del Sur, Caraga Region.
+            </p>
+            <p>From Manila to Cebu: <br />
+                1. Take a flight bound for Bancasi Airport, Butuan. <br />
+                2. Head on to the parking lot and take a bus or van going to Mangagoy, Bislig. <br />
+                3. Ask to be dropped off at Hinatuan Terminal. The trip will take more than 5 hours. <br />
+                4. Upon arriving in Hinatuan, charter a habal-habal ride going to the enchanted river.
+            </p>
+            <p>From Davao:
+                1. Go to Ecoland Terminal. <br />
+                2. Get on a bus bound for Mangagoy, Bislig. Travel time is around 5 hours. <br />
+                3. Once at Bislig, hop on to another bus bound for Hinatuan. <br />
+                4. Upon arriving in Hinatuan town, charter a habal-habal ride going to the enchanted river. 
+            </p>
+
+            <h3>Map</h3>
+            <div id="map" style="width:600px;height:300px;"></div>
+            <script>
+                function initMap() {
+                    // The location
+                    var loc = { lat: 8.4588, lng: 126.3548 };
+                    // The map, centered at location (Zoom based on how far/close the location is centered ie street level, country level)
+                    var map = new google.maps.Map(
+                        document.getElementById('map'), { zoom: 10, center: loc });
+                    // The marker, positioned at location
+                    var marker = new google.maps.Marker({ position: loc, map: map });
+                }
+            </script>
+
+            <h3>What to Expect</h3>
+            <p>
+                Because this is a popular site, local tourists flock to the river which can become crowded during the weekends. It is recommended to visit during the weekdays where it is less crowded. At noon the local caretaker of the river will ring its bell to commence its feeding hour, it is advised to respect this tradition by vacating the river until the ritual is completed.
+            </p>
+
+            <h3>Fees</h3>
+            <table>
+                <tr>
+                    <th>Adult</th>
+                    <th>Children</th>
+                    <th>Elderly</th>
+                    <th>Envrionmental Fee</th>
+                    <th>Parking Fee</th>
+                </tr>
+                <tr>
+                    <th>P40</th>
+                    <th>P15</th>
+                    <th>P34</th>
+                    <th>P10</th>
+                    <th>P20</th>
+                </tr>
+            </table>
+
+        </div>
+        <div class="side"></div>
+    </div>
+    <script>
+                showSlides(slideIndex);
+    </script>
+</body>
+</html>

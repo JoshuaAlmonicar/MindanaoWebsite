@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Britania Islands</title>
+    <link rel="stylesheet" type="text/css" href="Styles/BodyStyleSheet.css">
+    <link rel="stylesheet" type="text/css" href="Styles/slideshow.css">
+    <link rel="stylesheet" type="text/css" href="Styles/TopNavBar.css">
+    <script type="text/javascript" src="scripts/webpageScripts.js"></script>
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=YOURKEY&callback=initMap">
+    </script>
+
+</head>
+<body>
+    <div id="header">
+        <div>
+            <img src="images/Logo.png" style="width:125px;height:125px" />
+        </div>
+    </div>
+
+    <ul>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="Spots.html">Explore</a></li>
+        <li><a href="About.html">About Us</a></li>
+    </ul>
+
+    <div class="bodyrow">
+        <div class="side"></div>
+        <div class="main">
+            <h2>Britania Group of Islands</h2>
+            <p>
+                The Britania group of islands consists of 24 islets scattered throughout Lianga Bay in the Pacific Ocean, each islets comes with various forms and sizes and can be reached by boats as island hopping is one of the most popular activities in Lianga Bay
+            </p>
+
+            <div class="container slideshowsize">
+                <div class="mySlides">
+                    <div class="numbertext">1 / 4</div>
+                    <img class="imgsize" src="../images/Location Images/Brittania Islands/Britania-Group-of-Islands-Surigao-del-Sur-768x512.jpg" />
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">2 / 4</div>
+                    <img class="imgsize" src="../images/Location Images/Brittania Islands/Brittania Islands/Britania-Group-of-Islands-Surigao-del-Sur-Bonbon-768x576.jpg">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">3 / 4</div>
+                    <img class="imgsize" src="../images/Location Images/Brittania Islands/Brittania Islands/Britania-Group-of-Islands-Surigao-del-Sur-Boslon-768x576.jpg">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">4 / 4</div>
+                    <img class="imgsize" src="../images/Location Images/Brittania Islands/Brittania Islands/Britania-Group-of-Islands-Surigao-del-Sur-Naked-Island-768x576.jpg">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+
+                <div class="row">
+                    <div class="column">
+                        <img class="demo cursor" src="../images/Location Images/Brittania Islands/Brittania Islands/Britania-Group-of-Islands-Surigao-del-Sur-768x512.jpg" style="width:100%" onclick="currentSlide(1)" alt="Britania Island">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="../images/Location Images/Brittania Islands/Brittania Islands/Britania-Group-of-Islands-Surigao-del-Sur-Bonbon-768x576.jpg" style="width:100%" onclick="currentSlide(2)" alt="Bobon Island">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="../images/Location Images/Brittania Islands/Brittania Islands/Britania-Group-of-Islands-Surigao-del-Sur-Boslon-768x576.jpg" style="width:100%" onclick="currentSlide(3)" alt="Boslon Island">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="../images/Location Images/Brittania Islands/Brittania Islands/Britania-Group-of-Islands-Surigao-del-Sur-Naked-Island-768x576.jpg" style="width:100%" onclick="currentSlide(4)" alt="Naked Island">
+                    </div>
+
+                </div>
+            </div>
+
+
+            <h3>How to get there</h3>
+            <p>
+                From Bancasi Airport in Butuan City: <br />
+                Take a domestic flight to Bancasi Airport In Butuan City, commuter buses and vans will take you directly to the closest town, San Augustin, it is a 4-5 hours trip from the airport. Once at San Augistin, hire a tricycle to Britania Port.
+            </p>
+            <h3>Island Hopping</h3>
+            <p>
+                There are a number of agencies at Britania port that rent their boats, hiring prices for boats that can fir up to 15 people can range from 1500-2000 pesos, smaller boats range from 300-600 pesos. We recommend Arena Blanca Resort as they offer better deals with boat renting as well as accommodation.
+            </p>
+            <h2 style="text-align:left">Location of Arena Blanca Resort</h2>
+            <div id="map" style="width:600px;height:300px;"></div>
+
+            <script>
+                function initMap() {
+                    // The location
+                    var loc = { lat: 8.4961, lng: 123.3034 };
+                    // The map, centered at location (Zoom based on how far/close the location is centered ie street level, country level)
+                    var map = new google.maps.Map(
+                        document.getElementById('map'), { zoom: 10, center: loc });
+                    // The marker, positioned at location
+                    var marker = new google.maps.Marker({ position: loc, map: map });
+                }
+            </script>
+
+
+        </div>
+        <div class="side"></div>
+    </div>
+    <script>
+                showSlides(slideIndex);
+    </script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+﻿/*body {
+    background-image: url('../images/Background Images/background.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}*/
+
+/*#header {
+    border: 2px solid black;
+    background-image: url('../images/Background Images/NewHeaderBG.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}*/
+
+p.one {
+    font-size: 20px;
+    font-family: monaco, Consolas, "Lucida Console", monospace;
+    color: rgb(92, 139, 122);
+    text-align: center;
+    border: 1px solid black;
+    border-style: solid;
+    border-width: medium;
+    background-color: rgb(228, 241, 255);
+}
+
+
+/*div.uno {
+    display: inline-block;
+    width: 700px;
+    height: 700px;
+    margin-top: 20px;
+    margin-bottom: 80px;
+    margin-right: 20px;
+    margin-left: 150px;
+    float: left;
+}
+
+div.dos {
+    display: inline-block;
+    width: 700px;
+    height: 700px;
+    margin-top: 20px;
+    margin-bottom: 80px;
+    margin-right: 150px;
+    margin-left: 20px;
+    float: right;
+}*/
+
+/*/*this will make it adaptive to different screen sizes or when you zoom in/out*/
+@media screen and (max-width: 800px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/*this will make it adaptive to different screen sizes or when you zoom in/out*/
+@media screen and (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+.bodyrow {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+}
+
+.side {
+    -ms-flex: 15%; /* IE10 */
+    flex: 15%;
+    padding: 20px;
+}
+
+.main {
+    -ms-flex: 70%; /* IE10 */
+    flex: 70%;
+    padding: 20px;
+}*/
+
+
+footer {
+    text-align: center;
+}
+
+
